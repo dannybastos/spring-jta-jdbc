@@ -33,5 +33,6 @@ public class SellService {
 		if (stockService.stockOf(productId).compareTo(0l) < 0 ) {
 			throw new OutOfStockException("Out of stock");
 		}
+		log.info("sell ok");
 	}
 }

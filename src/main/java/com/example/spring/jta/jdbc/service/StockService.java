@@ -21,7 +21,7 @@ public class StockService {
 	
 	public void update(Long productId, Long qty) {
 		template.update("update stock set stock_qty=stock_qty-? where product_id=?", qty, productId);
-		log.info(String.format("updated stock product_id : %d => qty : %d", productId, qty));		
+		log.info(String.format("stock updated product_id : %d => qty : %d", productId, qty));		
 	}
 	
 	public Long stockOf(Long productId) {
