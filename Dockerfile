@@ -12,4 +12,4 @@ RUN mv /app/build/libs/spring-jta-jdbc*.jar /app/app.jar
 
 EXPOSE 8080
 
-CMD ["java", "-jar", "/app/app.jar"]
+ENTRYPOINT java -jar /app/app.jar
